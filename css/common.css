@@ -1,11 +1,102 @@
 .color-main {
-    color: #21b8c6
+  color: #21b8c6;
 }
 
 .color-second {
-    color: #b45d01;
+  color: #b45d01;
 }
 
 .text-main {
-    color: #010101
+  color: #010101;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  display: block;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+.pull_left {
+  float: left;
+}
+
+.pull_right {
+  float: right;
+}
+
+.menu_link {
+  line-height: 22px;
+}
+
+.menu_link a,
+.menu_link span,
+.menu_link div {
+  float: right;
+}
+
+.menu_link a {
+  color: #a0a0a0;
+}
+
+.menu_link span {
+  width: 1px;
+  height: 12px;
+  margin: 6px 11px 0;
+  background-color: #cfcfcf;
+}
+
+.lang {
+  width: 53px;
+  height: 22px;
+  background-color: #ececec;
+  color: #a0a0a0;
+  text-align: center;
+}
+
+.lang::before {
+  content: '';
+}
+
+.lang::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 0 2px 2px;
+  border-left: 1px solid #b5b5b5;
+  border-bottom: 1px solid #b5b5b5;
+  -webkit-box-sizing-sizing: border-box;
+  -moz-box-sizing-sizing: border-box;
+  -ms-box-sizing-sizing: border-box;
+  -o-box-sizing-sizing: border-box;
+  box-sizing-sizing: border-box;
+  transform: rotate(-45deg);
 }

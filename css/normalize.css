@@ -127,6 +127,7 @@ html {
 
 body {
   margin: 0;
+  font-size: 12px;
 }
 
 /**
@@ -177,10 +178,13 @@ pre {
 
 /**
    * Remove the gray background on active links in IE 10.
+
+   去掉<a>的下横线
    */
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**

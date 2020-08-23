@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import "./sassConfig.scss";
+
+.color-main {
+    color: $color_main
+}
+
+.color-second {
+    color: $color_secong;
+}
+
+.text-main {
+    color: $text-main
+}
+
+.container {
+    width: $container;
+    margin: 0 auto; //块元素居中
+    // background-color: black;
+}
+
+//header
+.logo {
+    // float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    img {
+        display: block;
+    }
+}
+
+//清除浮动------------
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+//------------------
+
+.pull_left {
+    float: left;
+}
+
+.pull_right {
+    float: right;
+}
+
+//顶部菜单
+.top_menu {
+    // float: right;
+}
+
+.menu_link {
+    line-height: 22px;
+
+    a,
+    span,
+    div {
+        float: right;
+    }
+
+    a {
+        color: $text_gray;
+
+    }
+
+    span {
+        width: 1px;
+        height: 12px;
+        margin: 6px 11px 0;
+        background-color: #cfcfcf
+    }
+}
+
+//语言菜单
+.lang {
+    width: 53px;
+    height: 22px;
+    background-color: #ececec;
+    color: $text_gray;
+    text-align: center;
+
+    &::before {
+        content: '';
+    }
+
+    &::after {
+        content: '';
+        display: inline-block; //即内又 块
+        width: 6px;
+        height: 6px;
+        margin: 0 0 2px 2px;
+
+        //图片实现
+        // background-image: url(../images/icon-lang-arrow.png);
+        // background-repeat: no-repeat; //图片不平铺
+        //简写
+        // background: url(../images/icon-lang-arrow.png) no-repeat;
+
+        border-left: 1px solid #b5b5b5; //宽度 线的样式 颜色
+        border-bottom: 1px solid #b5b5b5;
+        //css3的属性
+        // -webkit-box-sizing: border-box;
+        @include webkit(box-sizing, border-box);
+        transform: rotate(-45deg)
+    }
+
+    // i {}
+}
